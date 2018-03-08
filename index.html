@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman-Game</title>
+</head>
+<body>
+    <h1>Stanger Things</h1>
+
+    <div id= "word-options"></div>
+
+    <script type="text/javascript">
+    
+    var wordList = [
+        "Eleven",
+        "Demogorgon",
+        "Hopper",
+        "Eggo",
+        "Upside Down",
+        "Will"
+    ];
+
+    var wordOptionsDiv = document.getElementById('word-options');
+
+    for( var i = 0; i < wordList.length; i++) {
+        var wordNameDiv = document.createElement('div');
+
+        wordNameDiv.textContent = wordList[i];
+
+        wordOptionsDiv.appendChild(wordNameDiv);
+    }
+    
+    
+    </script>
+</body>
+</html>
