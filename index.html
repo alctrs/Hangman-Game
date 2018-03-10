@@ -19,19 +19,56 @@
         "Hopper",
         "Eggo",
         "Upside Down",
-        "Will"
+        "Will",
     ];
+    var wins = 0;
+    var loss = 0;
+    var wrongLetter = [];
+    var guessessLeft = 9;
+    var underScore = [];
+    var userGuesses = [];
+    var randWord;
+//function
 
-    var wordOptionsDiv = document.getElementById('word-options');
-
-    for( var i = 0; i < wordList.length; i++) {
-        var wordNameDiv = document.createElement('div');
-
-        wordNameDiv.textContent = wordList[i];
-
-        wordOptionsDiv.appendChild(wordNameDiv);
+ document.onekeyup = function(e) {
+    var keyPress = e.key;
     }
+function startGame(){
+   randWord= wordList[Math.floor(Math.random() * wordList.length)];
     
+   for( var i = 0; i < randWord.length; i++) 
+   { 
+    underScore.push('-');
+   }
+   console.log(randWord);
+   document.getElementById('wordList').innerHTML = underScore; }
+
+   console.log(wordList);
+
+  
+
+
+       
+
+// Main
+//===================
+
+
+
+  //  var wordOptionsDiv = document.getElementById('word-options');
+
+   // for( var i = 0; i < wordList.length; i++) {
+     //   var wordNameDiv = document.createElement('div');
+
+       // wordNameDiv.textContent = wordList[i];
+
+      //  wordOptionsDiv.appendChild(wordNameDiv);
+   //
+    
+    document.onekeyup = function(e) {
+    var keyPress = e.key;
+    }
+   //
     
     </script>
 </body>

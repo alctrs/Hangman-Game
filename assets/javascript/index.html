@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman-Game</title>
+    <link rel="stylesheet" href="C:\Users\MAYRA\Google Drive\Week 3 Homework\Hangman-Game\assets\css\reset.css">
+  
+</head>
+
+<body>
+    <h1>Welcome</h1>
+
+   
+    <div class="panel panel-default" style="max-width:400px;margin-left:auto; margin-right:auto; margin-top:100px;">
+            <div class="panel-body text-center">
+          
+          
+                <div class="panel-body text-left">
+          
+          <!--•	PseudoCode: Hangman
+          •	Computer presents word with spaces in place of the letters.
+          •	Player guesses letters
+          •	When they answer correctly (or when they guess one of the letters) the computer fills in the corresponding letter
+          •	When they answer incorrectly, the computer logs the wrong letter on the screen so the user can see it, and then takes away one of their chances
+          •	The player gets 15 chances/guesses to get the word correct
+          •	The title of the page should give a hint as to the type of word the player is guessing i.e. rock n roll bands etc.-->
+          
+          <div class="st">
+
+                <div class="st-top">
+                  <div class="st-bound st-bound-full"></div>
+                  <p><span class="st-drop st-stranger-s">S</span><span class="st-stranger-t">t</span><span class="st-stranger-r">r</span><span class="st-stranger-a">a</span><span class="st-stranger-n">n</span><span class="st-stranger-g">g</span><span class="st-stranger-e">e</span><span class="st-drop st-stranger-r-2">r</span>
+                  </p>
+                  <div class="st-bound st-bound-mini st-bound-left"></div>
+                  <div class="st-bound st-bound-mini st-bound-right"></div>
+                </div>
+              
+                <div class="st-bottom">
+                  <p><span class="st-things-t">T</span><span class="st-things-h">h</span><span class="st-things-i">i</span><span class="st-things-n">n</span><span class="st-things-g">g</span><span class="st-things-s">s</span></p>
+                </div>
+              
+              </div>
+          
+            </div>
+          </div>  
+          
+          
+          
+          
+          
+          
+          <div class="container">
+
+          <Container=left justified>
+          <p>Guesses to go: <span id="guesses-left"></span></p>
+          <p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+          <p>Player Wins: <span id="win-counter"></span></p>
+          <p>Player Losses: <span id="loss-counter"></span></p>
+          <h3 id="word-blank"></h3>
+
+        </div>
+          
+          
+         
+          
+
+          <iframe width="50%" height="50" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/275269195&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </body>
+        
+  
+          <script src="game.js"></script>
+   
+         
+          
+
+
+</html>
