@@ -8,12 +8,13 @@ body {
     border-color: #ed2b12;
     margin: auto; 
     widows: 0.5em;
+    width: 1200px;
     
   }
   
 
   .page-header {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'ITC Benguiat W01';
     font-weight: 800;
     color: #1c0502;
